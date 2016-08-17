@@ -85,7 +85,7 @@ namespace boxberryApi {
         }
 
         private function requestSoap(){
-            include(BOXBERRY_DIR."/driver/soap.php");
+            include_once(BOXBERRY_DIR."/driver/soap.php");
             $driver = new Soap($this->method,$this->args);
             $data = $driver->Request();
             if(count($driver->error)){
@@ -95,7 +95,7 @@ namespace boxberryApi {
         }
 
         private function requestJson(){
-            include(BOXBERRY_DIR."/driver/json.php");
+            include_once(BOXBERRY_DIR."/driver/json.php");
             $driver = new Json($this->method,$this->args);
             $data = $driver->Request();
             if(count($driver->error)){
