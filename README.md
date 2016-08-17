@@ -48,6 +48,47 @@
    
    ```
    
+**Список Soap методов**
+Необходимо указать принадлежность метода к сервису.
+Если этого не сделать, то передача аргументов для неописаного
+метода будет производиться к сервису PUBLIC_SERVICE      
+   ```php   
+   $soap = [
+       LC_SERVICE=>[
+           'ParselCreate',
+           'ParselCheck',
+           'ParselList',
+           'ParselDel',
+           'ParselStory',
+           'ParselSend',
+           'ParselSendStory',
+           'OrdersBalance',           
+           'ParcelCreateForeign',
+           'ParcelSendForeign',
+           'PaymentOrders'
+       ],
+       PUBLIC_SERVICE=>[
+           'ListCities',
+           'ListPoints',
+           'ListZips',
+           'ZipCheck',
+           'ListStatuses',
+           'ListStatusesFull',
+           'ListServices',
+           'PointsForParcels',
+           'CourierListCities',
+           'DeliveryCosts',
+           'DeliveryCostsF',
+           'PointsByPostCode',
+           'PointsDescription',
+           'ListPointsShort',
+           'ListCountry',
+           'ListPointsForeign'
+       ]
+   ];
+   
+   ```
+   
 ### Json.
 Обычно [JSON](http://www.w3schools.com/json/) не имеет избыточности, поэтому менее ресурсоемкий 
 и более компактный. Все методы и сервисы, перечисленные в SOAP заключены в одном источнике. 
