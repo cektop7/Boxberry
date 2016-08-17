@@ -9,8 +9,7 @@
     $ git clone git@github.com:AlekseyNikulin/Boxberry.git
     
 ## Настройка
-Для настройки приложения, откройте файл конфигурации **configure.php**:
-   
+Для настройки приложения, откройте файл конфигурации **configure.php**:   
    ```php
    
    // Корневая директория компонента. 
@@ -23,13 +22,12 @@
    
 ### Soap   
 Если у вас по каким-либо причинам не работает [curl](http://php.net/manual/ru/book.curl.php), 
-отключена директива [allow_url_fopen](http://www.php.net/manual/ru/filesystem.configuration.php#ini.allow-url-fopen) и так далее
+отключена директива [allow_url_fopen](http://www.php.net/manual/ru/filesystem.configuration.php#ini.allow-url-fopen) и так далее,
 то вполне вероятно Вы станете применять технологию обмена по стандарту [SOAP](http://www.tutorialspoint.com/soap/what_is_soap.htm).
     
 #### Личный кабинет.
 В АПИ личного кабинета вы можете создавать/изменять/удалять посылки, формировать акты-приема передачи, 
-генерировать этикетки и т.д.
-   
+генерировать этикетки и т.д.   
    ```php
    
    define("LC_SERVICE","/__soap/1c_lc.php?wsdl");
@@ -43,8 +41,7 @@
    - исчерпывающая информация о ПВЗ
    - стоимость оказанных услуг
    - расчет стоимости доставки
-   - отслеживать состояние посылки
-    
+   - отслеживать состояние посылки    
    ```php
    
    define("PUBLIC_SERVICE","/__soap/1c_public.php?wsdl");
@@ -54,8 +51,7 @@
 ### Json.
 Обычно [JSON](http://www.w3schools.com/json/) не имеет избыточности, поэтому менее ресурсоемкий 
 и более компактный. Все методы и сервисы, перечисленные в SOAP заключены в одном источнике. 
-Если используете JSON, то в настройках SOAP нет необходимости.
- 
+Если используете JSON, то в настройках SOAP нет необходимости. 
    ```php
       
    define("JSON_SERVICE","/json.php");
