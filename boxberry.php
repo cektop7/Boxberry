@@ -84,6 +84,9 @@ namespace boxberryApi {
             }
         }
 
+        /**
+         * @return array|mixed
+         */
         private function requestSoap(){
             include_once(BOXBERRY_DIR."/driver/soap.php");
             $driver = new Soap($this->method,$this->args);
@@ -94,6 +97,9 @@ namespace boxberryApi {
             return $data;
         }
 
+        /**
+         * @return array|mixed
+         */
         private function requestJson(){
             include_once(BOXBERRY_DIR."/driver/json.php");
             $driver = new Json($this->method,$this->args);
