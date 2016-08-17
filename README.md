@@ -22,7 +22,7 @@
    
 ### Soap   
 Если у вас по каким-либо причинам не работает [curl](http://php.net/manual/ru/book.curl.php), 
-отключена директива [allow_url_fopen](http://www.php.net/manual/ru/filesystem.configuration.php#ini.allow-url-fopen) и так далее
+отключена директива [allow_url_fopen](http://www.php.net/manual/ru/filesystem.configuration.php#ini.allow-url-fopen) и так далее,
 то вполне вероятно Вы станете применять технологию обмена по стандарту [SOAP](http://www.tutorialspoint.com/soap/what_is_soap.htm).
     
 #### Личный кабинет.
