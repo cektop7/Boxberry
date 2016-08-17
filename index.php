@@ -16,4 +16,4 @@ $boxberry->args = [
     'token'=>'15978.pnpqcecb',
     'method'=>'ListPoints'
 ];
-print_r($data = $boxberry->getData());
+print_r($boxberry->getData());
