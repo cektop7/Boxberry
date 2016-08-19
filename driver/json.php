@@ -17,6 +17,11 @@ class Json{
     public $args = [];
 
     /**
+     * @var string
+     */
+    private $methodQuery = 'post';
+
+    /**
      * @var array
      */
     public $error = [];
@@ -42,6 +47,16 @@ class Json{
         return json_decode($data, 1);
     }
 
+    public function setMethodQuery(){
+        if(isset($this->args['methodQuery'])){
+            if(in_array($this->args['methodQuery'],['post','get'])) {
+                $this->methodQuery = $this->args['methodQuery'];
+            }
+            unset($this->args['methodQuery']);
+        }
+        return $this;
+    }
+
     /**
      * @return mixed
      */
@@ -49,8 +64,8 @@ class Json{
     {
         try{
             $this->connect();
-
-            if($data = \Requests::post(HOST.JSON_SERVICE,[],
+            $methodQuery = $this->setMethodQuery()->methodQuery;
+            if($data = \Requests::$methodQuery(HOST.JSON_SERVICE,[],
                 $this->args
             )){
                 return $this->toArray($data->body);
