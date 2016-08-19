@@ -7,7 +7,7 @@
  * @Email: masterweb@e1.ru
  */
 
-if((float)PHP_VERSION < "5.3") die("Version php should not be below 5.3");
+if(version_compare(PHP_VERSION, '5.4.0',"<")) die("Version php should not be below 5.3");
 
 // Корневая директория
 define("BOXBERRY_DIR",__DIR__."/");
