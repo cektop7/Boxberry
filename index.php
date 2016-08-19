@@ -13,7 +13,7 @@ include_once(BOXBERRY_DIR."/boxberry.php");
 $boxberry = new \boxberryApi\boxberry();
 $boxberry->type = "json";
 $boxberry->args = [
-    'token'=>'10000.rbpqbafb',
+    'token'=>'*******',
     'method'=>'ListPoints'
 ];
 print_r($boxberry->getData());
