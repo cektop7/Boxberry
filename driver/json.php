@@ -47,6 +47,9 @@ class Json{
         return json_decode($data, 1);
     }
 
+    /**
+     * @return $this
+     */
     public function setMethodQuery(){
         if(isset($this->args['methodQuery'])){
             if(in_array($this->args['methodQuery'],['post','get'])) {
