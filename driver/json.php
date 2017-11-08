@@ -68,9 +68,9 @@ class Json{
         try{
             $this->connect();
             $methodQuery = $this->setMethodQuery()->methodQuery;
-            if($data = \Requests::$methodQuery(HOST.JSON_SERVICE,[],
-                $this->args
-            )){
+            if($data = (($methodQuery == 'get')?
+                \Requests::$methodQuery(HOST. join("?",array_diff([JSON_SERVICE, http_build_query($this->args)],[""])))
+                : \Requests::$methodQuery(HOST.JSON_SERVICE,[],$this->args))){
                 return $this->toArray($data->body);
             } else {
                 $this->error[] = self::ResNotData;

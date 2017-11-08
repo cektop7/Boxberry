@@ -14,7 +14,7 @@ $boxberry = new \boxberryApi\boxberry();
 $boxberry->type = "json";
 $boxberry->args = [
     'methodQuery' => 'get',
-    'token'=>'*******',
+    'token'=>'********',
     'method'=>'ListPoints',
 ];
 print_r($boxberry->getData());

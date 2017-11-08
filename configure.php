@@ -13,7 +13,7 @@ if(version_compare(PHP_VERSION, '5.4.0',"<")) die("Version php should not be bel
 define("BOXBERRY_DIR",__DIR__."/");
 
 // Адрес ресурса
-define("HOST","http://test.api.boxberry.de");
+define("HOST","http://api.boxberry.de");
 
 // Soap. Личный кабинет.
 define("LC_SERVICE","/__soap/1c_lc.php?wsdl");
