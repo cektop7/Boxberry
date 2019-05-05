@@ -7,9 +7,9 @@
  * @Email: masterweb@e1.ru
  */
 
-include_once(dirname(__FILE__)."/configure.php");
-
 namespace boxberryApi {
+
+	include_once(dirname(__FILE__)."/configure.php");
 
     use BoxberryApi\Json\Json;
     use BoxberryApi\Soap\Soap;
