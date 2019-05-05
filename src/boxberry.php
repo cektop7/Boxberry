@@ -7,6 +7,8 @@
  * @Email: masterweb@e1.ru
  */
 
+include_once(dirname(__FILE__)."/configure.php");
+
 namespace boxberryApi {
 
     use BoxberryApi\Json\Json;

@@ -1,0 +1,10 @@
+{
+    "name": "cektop7/boxberry",
+    "type": "library",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "boxberryApi\\": "src/"
+        }
+    }
+}
