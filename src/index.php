@@ -8,7 +8,7 @@
  */
 
 include_once(dirname(__FILE__)."/configure.php");
-include_once(BOXBERRY_DIR."/boxberry.php");
+include_once(BOXBERRY_DIR."boxberry.php");
 
 $boxberry = new \boxberryApi\boxberry();
 $boxberry->type = "json";

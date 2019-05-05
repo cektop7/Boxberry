@@ -81,7 +81,7 @@ class Json{
     }
 
     function connect(){
-        require_once(BOXBERRY_DIR.'/driver/Request/library/Requests.php');
+        require_once(BOXBERRY_DIR.'driver/Request/library/Requests.php');
         \Requests::register_autoloader();
     }
 }
