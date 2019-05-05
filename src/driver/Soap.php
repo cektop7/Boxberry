@@ -9,8 +9,7 @@
 
 namespace BoxberryApi\Soap;
 
-    class Soap
-    {
+    class Soap {
         /**
          * @var string
          */

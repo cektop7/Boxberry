@@ -9,7 +9,7 @@
 
 namespace BoxberryApi\Json;
 
-class Json{
+class Json {
 
     /**
      * @var array

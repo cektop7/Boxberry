@@ -1,4 +1,4 @@
-Форк для установки через composer
+Форк для установки через composer.
 ```
 composer require cektop7/boxberry:dev-master
 ````
