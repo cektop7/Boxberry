@@ -1,7 +1,9 @@
 {
     "name": "cektop7/boxberry",
     "type": "library",
-    "require": {},
+    "require": {
+        "php": "^5.4.0"
+    },
     "autoload": {
         "psr-4": {
             "boxberryApi\\": "src/"
